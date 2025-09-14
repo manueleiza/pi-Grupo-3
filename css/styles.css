@@ -42,7 +42,7 @@ body {
     justify-content: space-between;
 
     background-color: #cfbfa8;
-  
+
     padding: 3%;
 
     border-radius: 20px;
@@ -50,7 +50,7 @@ body {
     margin-top: 2%;
 
 
-    
+
 
 
 }
@@ -74,11 +74,11 @@ body {
 
 
 .cabecera_izquierda h1 {
-   
-  color: white;
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
+
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
 }
 
 
@@ -113,11 +113,11 @@ body {
     color: white;
 
     font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: bold;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
 
-  font-size: larger;
+    font-size: larger;
 }
 
 .cabecera_derecha p {
@@ -125,11 +125,11 @@ body {
     color: white;
 
     font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: bold;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
 
-  font-size: larger;
+    font-size: larger;
 }
 
 
@@ -155,20 +155,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10px;
-    font-family: cursive;
+    margin-bottom: 3vh;
+    font-family: "Cormorant Garamond", serif;
+    font-size: xx-large;
 }
 
 .resgistro {
     display: flex;
     flex-wrap: wrap;
     width: 425px;
-    background-color: #a5957e;
+    background-color: #cfbfa8;
     justify-content: center;
     align-self: center;
-    margin-left: 515px;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 div {
@@ -178,6 +178,7 @@ div {
     margin-bottom: 5px;
     width: 300px;
 }
+
 
 form {
     display: flex;
@@ -190,6 +191,10 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: larger;
 
 }
 
@@ -197,7 +202,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -205,13 +210,27 @@ form {
     display: flex;
     flex-wrap: wrap;
     height: 20px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+
+    margin-top: 15px;
     margin-left: 32%;
     justify-content: center;
     width: 100px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80%;
+
 }
 
 .agregado {
     margin-top: 20px;
+}
+
+.acepto {
+    display: flex;
+    margin-left: 10px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+label {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
 }
