@@ -21,8 +21,8 @@ header {
     background-color: #a5957e;
     flex-direction: row;
     height: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
 }
@@ -33,7 +33,12 @@ header {
     height: 100px;
 
 }
-
+.desaparecer{
+     display: flex;
+    flex-wrap: wrap;
+ 
+    margin-top: 0px;
+}
 a {
     display: flex;
     flex-wrap: wrap;
@@ -43,18 +48,11 @@ a {
     font-size: larger;
 }
 
-a.home{
-display: flex;
-    flex-wrap: wrap;
-    padding-left: 23vw;
 
-
-
-}
 a.top {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 20px;
+    padding-left: 27vw;
 
 }
 
@@ -92,7 +90,7 @@ a.pot {
     justify-content: center;    
     align-self: center;
     margin-left: 515px;
-    padding: 15px;
+    padding: 30px;
     border-radius: 15px;
 }
 
@@ -101,5 +99,43 @@ div{
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 5px;
+    width: 300px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vivido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.condicioneso{
+         display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+.boton{ 
+     display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 32%;
+    justify-content: center;
+    width: 100px;
+}
+
+.agregado{
+    margin-top: 20px;
 }
 
