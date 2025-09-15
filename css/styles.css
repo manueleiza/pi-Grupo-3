@@ -163,7 +163,7 @@ body {
 .resgistro {
     display: flex;
     flex-wrap: wrap;
-    width: 425px;
+    width: 28.1vw;
     background-color: #cfbfa8;
     justify-content: center;
     align-self: center;
@@ -175,8 +175,8 @@ div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 5px;
-    width: 300px;
+     margin-bottom: 0.587vh;
+    width: 19.84vw;
 }
 
 
@@ -190,7 +190,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1.18vh;
     text-decoration: none;
     color: black;
     font-family: "Cormorant Garamond", serif;
@@ -202,31 +202,31 @@ form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 1.18vh;
 }
 
 
 .boton {
     display: flex;
     flex-wrap: wrap;
-    height: 20px;
+    height: 2.35vh;
 
-    margin-top: 15px;
+    margin-top: 1.76vh;
     margin-left: 32%;
     justify-content: center;
-    width: 100px;
+    width: 6.61vw;
     font-family: "Cormorant Garamond", serif;
     font-size: 80%;
 
 }
 
 .agregado {
-    margin-top: 20px;
+    margin-top: 2.35vh;
 }
 
 .acepto {
     display: flex;
-    margin-left: 10px;
+    margin-left: 0.661vw;
     font-family: "Cormorant Garamond", serif;
 }
 
