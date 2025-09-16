@@ -137,6 +137,7 @@ body {
     margin-bottom: 3vh;
     font-family: "Cormorant Garamond", serif;
     font-size: xx-large;
+    margin-top: 8vh;
 }
 
 .resgistro {
@@ -148,7 +149,8 @@ body {
     align-self: center;
     padding: 30px;
     border-radius: 20px;
-    margin-bottom: 16.5vh;
+  
+    margin-bottom: 11.6vh;
 }
 
 div {
