@@ -34,7 +34,7 @@ body {
 
 
 #cabecera {
-    width: 80%;
+    width: 90%;
     height: 10vh;
 
     display: flex;
@@ -233,4 +233,79 @@ form {
 label {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
+}
+
+
+
+
+
+/*HOME*/
+
+
+#main_home{
+width: 90%;
+margin-top: 2%;
+
+background-color:#e4d2ba;
+
+display: flex;
+flex-direction: column;
+
+padding: 2%;
+
+border-radius: 5px;
+}
+
+
+.mas_vendidos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    margin-top: 0%;
+}
+
+.mas_vendidos article{
+
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    margin: 1%;
+    padding: 2%;
+
+    border: 2px solid rgb(241, 238, 209);
+    border-radius: 5px;
+
+}
+
+.mas_vendidos img{
+    width: 100%;
+}
+
+.mas_vendidos p{
+    margin-top: 1%;
+}
+
+
+
+#main_home div{
+width: 50%;
+margin-left: 3%;
+
+display: flex;
+
+}
+
+#main_home h2{
+color: rgb(87, 87, 87);
+
+display: flex;
+font-size: 35px;
+
+
 }
