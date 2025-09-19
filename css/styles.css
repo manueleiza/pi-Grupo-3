@@ -567,3 +567,53 @@ padding-right: 3vw;
     
 }
 
+
+
+
+/* Estilos Telefono 420px */
+
+@media(max-width: 420px) {
+
+    .catbody {
+    flex-direction: column;
+}
+    .aside_nav {
+    width: 100%;
+}
+#contenedor_categori{
+    width: 100%;
+}
+.categorias{
+    flex-direction: column;
+}
+.categorias article{
+    width: 100%;
+}
+.subtitulo_main{
+    width: 100%;
+}
+
+.subtitulo_main h2{
+    text-align: center;
+}
+
+#contenedor_home{
+    width: 100%;
+}
+.mas_vendidos{
+    display: flex;
+    flex-direction: column;
+}
+.resgistro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+}
+
+}
