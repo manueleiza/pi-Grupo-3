@@ -188,20 +188,24 @@ form {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 1.18vh;
+    text-align: center;
+    text-decoration: solid;
+
 }
 
 
 .boton {
     display: flex;
     flex-wrap: wrap;
-    height: 2.35vh;
+    height: 1.98h;
 
     margin-top: 1.76vh;
     margin-left: 32%;
     justify-content: center;
     width: 6.61vw;
     font-family: "Cormorant Garamond", serif;
-    font-size: 80%;
+    font-size: 100%;
+
 
 }
 
@@ -213,6 +217,8 @@ form {
     display: flex;
     margin-left: 0.661vw;
     font-family: "Cormorant Garamond", serif;
+    text-decoration-color: black;
+     
 }
 
 label {
@@ -386,6 +392,21 @@ flex-direction: column;
 }
 
 /*login*/
+.formulario_login {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 28.1vw;
+    background-color: #cfbfa8;
+    justify-content: center;
+    align-self: center;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-top: 1.9%;
+    margin-bottom: 11.3vh;
+}
 
 
 
@@ -440,8 +461,7 @@ flex-direction: column;
 }
 
 .pie_num{
-     display: flex;
-
+    display: flex;
     margin-top: 0px;
     margin-bottom: 30px;
    

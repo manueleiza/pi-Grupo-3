@@ -43,25 +43,29 @@
     </header>
     <!--Configuro el formulario de login -->
 
-    <main class="formulario.login">
-        <section class="caja.login">
+    <main class="formulario_login">
+        <section class="caja_login">
             <h1>Iniciar sesión</h1>
-            <form action="/index.html" method="get"></form>
-            <div>
-
-                <label for="email"> Correo electronico</label>
+            <form action="index.html" method="get"> <!--Acá use una ruta relativa para que pueda acceder el nav al inde-->
+            <div> 
+                <label for="email"> Correo electrónico</label>
                 <input type="email" name="email" value="@gmail.com">
                 <div>
 
-                </div>
+                
 
                <div>
                     <label for="">Contraseña</label>
                     <input type="password" name="contraseña" required>
                 </div>
 
-                <button class="boton.login" type="submit"> Ingresar </button>
+                <button class="boton-login" type="submit"> Ingresar </button>
+
+                <p> No tenes cuenta ? <a href="register.html"> Registrate </a>
+                </p>
+
             </form>
+
 
 
 
