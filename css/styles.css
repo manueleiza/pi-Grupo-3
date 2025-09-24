@@ -644,15 +644,39 @@ label {
         justify-content: center;
     }
 
-    /*register telefono */
+
     .fan {
         display: flex;
         flex-direction: column;
     }
 
-    .registro {
+    .resgistro{
+        display: flex;
         margin-left: 0px;
     }
 
+    form{
+        display: flex;
+        align-items: flex-start;
+        margin-left: 80px;
+    }
+
+    .fan{
+        width: auto;
+    }
+    .boton{
+        display: flex;
+        width: auto;
+    }
+    div{
+        width: auto;
+    }
+
+    .pie_izquierda{
+        display: none;
+    }
+    .pie_derecha{
+        display: none;
+    }
 
 }
