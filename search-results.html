@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>search.results</title>
+
+
     <link rel="stylesheet" href="./css/styles.css">
+
+
 </head>
 
 <body>
+
     <header id="cabecera">
 
         <article class="cabecera_izquierda">
@@ -25,6 +30,7 @@
 
             <form action="./search.results.html" method="get" class="buscador">
                 <input type="search" name="buscador" class="buscador" placeholder="Buscador">
+
             </form>
 
         </article>
@@ -39,12 +45,7 @@
         </nav>
 
     </header>
-
-
-
-    <main class="fan">
-
-
+    <main id="main_home">
 
 
         <aside class="aside_nav">
@@ -67,47 +68,61 @@
         </aside>
 
 
-
-
-        <section class="resgistro">
-            <h2 class="cuenta">Crea nueva cuenta</h2>
-            <form action="" method="get">
-                <div class="agregado">
-                    <label for="">Nombre</label>
-                    <input type="text" name="nombre" required>
-                </div>
-                <div>
-                    <label for="">Email</label>
-                    <input type="email" name="email" value="@gmail.com">
-                </div>
-
-                <div>
-                    <label for="">Contraseña</label>
-                    <input type="password" name="contraseña" required>
-                </div>
-
-                <div>
-                    <label for="">Repetir contraseña</label>
-                    <input type="password" name="contrasenia" required>
-                </div>
+        <div id="contenedor_home">
 
 
 
-                <div class="condicioneso">
-                    <input type="checkbox" name="condiciones" required>
-                    <label for="" class="acepto">Acepto términos y condiciones</label>
-                </div>
+            <div class="subtitulo_main">
+                <h2> Resultados de busqueda: "Barro" </h2>
+            </div>
 
-                <div>
-                    <button type="submit" class="boton">Registrarme</button>
-                </div>
-                <div>
-                    <a href="./login.html" class="vivido">Ya tengo una cuenta</a>
-                </div>
+            <div class="sin_resultados">
+                <h3>No se encontraron resultados. </h3>
 
-            </form>
-        </section>
+            </div>
+
+            <section class="mas_vendidos">
+
+
+
+                <article>
+
+                    <img src="./img/plato-barro-uno.jpg" alt="">
+                    <h3>Plato Inti</h3>
+                    <p>$14.800</p>
+                    <p>Plato de barro jujeño</p>
+
+                    <a href="./product.html">Ver Detalles</a>
+                </article>
+
+                <article>
+
+                    <img src="./img/plato-barro-dos.png" alt="">
+                    <h3>Plato Killa</h3>
+                    <p>$17.500</p>
+                    <p>Fuente de barro jujeña</p>
+
+                    <a href="./product.html">Ver Detalles</a>
+                </article>
+
+                <article>
+
+                    <img src="./img/plato-barro-3.png" alt="">
+                    <h3>Plato Sumaq Pacha</h3>
+                    <p>$16.800</p>
+                    <p>Plato playo de barro jujeño</p>
+
+
+                    <a href="./product.html">Ver Detalles</a>
+                </article>
+
+            </section>
+
+        </div>
+
     </main>
+
+
 
     <footer class="pie">
 

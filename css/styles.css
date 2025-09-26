@@ -93,7 +93,7 @@ body {
 
 .cabecera_derecha {
 
-    width: 15%;
+    width: 20%;
     height: 100%;
 
     display: flex;
@@ -102,6 +102,24 @@ body {
 
 
 }
+
+.listaHeader{
+    list-style-type: none;
+
+    width: 100%;
+
+    display: flex;
+
+    padding: 0;
+
+    justify-content: space-evenly;
+}
+
+.listaHeader li{
+    color: white;
+
+}
+
 
 .cabecera_derecha a {
     text-decoration: none;
@@ -153,7 +171,7 @@ body {
     padding-top: 10px;
     border-radius: 20px;
     margin-top: 1.9%;
-    margin-bottom: 11vh;
+    margin-bottom: 8.1%;
     margin-left: 12vw;
 }
 
@@ -252,20 +270,15 @@ label {
 }
 
 
-.aside_nav {
+.aside_nav{
     margin-top: 2%;
-
     width: 20%;
-
     display: flex;
     flex-direction: column;
-
     height: fit-content;
-
-
     background-color: #e4d2ba;
-
     padding: 2%;
+    border-radius: 5px;
 }
 
 .barra_nav ol {
@@ -411,24 +424,55 @@ color: black;
 
 /*login*/
 .titulo_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     font-family: "Cormorant Garamond", serif;
+    font-size: xx-large;
 }
+.main_log{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-top: 3%;
+    margin-bottom: 3.1%;
+    
+}
+
 
 .formulario_login {
     display: flex;
-    justify-content: center;
+  
     display: flex;
     flex-wrap: wrap;
     width: 28.1vw;
     background-color: #e4d2ba;
-    justify-content: center;
+
     align-self: center;
     padding: 30px;
     padding-top: 10px;
     border-radius: 20px;
-    margin-top: 16vh;
-    margin-bottom: 23vh;
+    margin-top: 3%;
+    margin-bottom: 15%;
+    margin-left: 15%;
+   
 }
+
+.ya_tengo{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.18vh;
+    text-decoration: none;
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: larger;
+}
+
+
+
+
 
 /*search*/
     
@@ -607,15 +651,12 @@ border-radius: 10px;
 
 .descripcion_producto article{
     width: 45% ;
-    height: 500px;
+
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-
     margin-left: 3%;
-
     padding: 2%;
 
 
@@ -681,8 +722,44 @@ border-radius: 10px;
     padding: 1%;
 }
 
+.comentarios{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.638);
+    border-radius: 20px;
+    width: 30px;
+    margin-bottom: 5px;
+}
 
+.comentarios h3{
+    font-size: large;
+}
 
+.comentarios h4{
+    font-size: small;
+}
+.puntuacion{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.puntuacion img{
+    display: flex;
+    width: 25px;
+  
+}
+
+.nobre_fecha{
+margin-bottom: 0px;
+}
+
+.fecha{
+    margin-bottom: 2%;
+}
 
 
 
@@ -803,7 +880,7 @@ border-radius: 10px;
         justify-content: center;
         background-color: transparent;
         border: solid 2px white; 
-        margin: 5%;
+      
         border-radius: 10px;
     }
 
@@ -865,6 +942,57 @@ border-radius: 10px;
     flex-direction: column;
 
     margin: 1%;
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.cabecera_izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cabecera_izquierda h1{
+    display: none;
+}
+.cabecera_medio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-right: 23%;
+}
+.cabecera_derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecera_derecha a{
+    margin: 1%;
+}
+
+.fan{
+    margin: 0px;
+}
+
+.main_log{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.formulario_login{
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 

@@ -18,14 +18,14 @@
         <article class="cabecera_izquierda">
 
             <a href="./index.html">
-                <img src="./img/logo_blanco.png" alt="logo">
+                <img src="./img/logo-blanco.png" alt="logo">
             </a>
             <h1>Mankah</h1>
 
         </article>
 
 
-           <article class="cabecera_medio">
+        <article class="cabecera_medio">
 
             <form action="./search.results.html" method="get" class="buscador">
                 <input type="search" name="buscador" class="buscador" placeholder="Buscador">
@@ -34,47 +34,69 @@
         </article>
 
 
-        <article class="cabecera_derecha">
-            <a href="./login.html" class="top">Log in </a>
-            <p>|</p>
-            <a href="./register.html" class="pot">Registrarse</a>
-        </article>
+        <nav class="cabecera_derecha">
+            <ol class="listaHeader">
+                <li><a href="./login.html" class="top">Log in </a></li>
+                <li>|</li>
+                <li><a href="./register.html" class="pot">Registrarse</a></li>
+            </ol>
+        </nav>
 
     </header>
     <!--Configuro el formulario de login -->
+    <main class="main_log">
 
-    <main class="formulario_login">
-        <section class="caja_login">
-            <h1 class="titulo_form">Iniciar sesión</h1>
-            <form action="index.html" method="get"> <!--Acá use una ruta relativa para que pueda acceder el nav al inde-->
-            <div> 
-                <label for="email"> Correo electrónico</label>
-                <input type="email" name="email" value="@gmail.com">
-                <div>
-
-                
-
-               <div>
-                    <label for="">Contraseña</label>
-                    <input type="password" name="contraseña" required>
-                </div>
-
-                <button class="boton-login" type="submit"> Ingresar </button>
-
-                <p> No tenes cuenta ? <a href="register.html"> Registrate </a>
-                </p>
-                
-
-            </form>
+        <aside class="aside_nav">
+            <div class="subtitulo_main">
+                <h3>Productos</h3>
+            </div>
 
 
+            <nav class="barra_nav">
+                <ol>
+                    <li> <a href="./category.html">- Linea Casira</a></li>
+                    <li> <a href="./category.html">- Linea Kaussay</a></li>
+                    <li> <a href="./category.html">- Lienea Wayna</a></li>
+                    <li> <a href="./category.html">- Linea Sumaq</a></li>
+                    <li> <a href="./category.html">- Linea Ayni</a></li>
+
+                </ol>
+            </nav>
+
+        </aside>
+
+        <div class="formulario_login">
+            <section class="caja_login">
+                <h1 class="titulo_form">Iniciar sesión</h1>
+                <form action="index.html" method="get">
+                    <!--Acá use una ruta relativa para que pueda acceder el nav al inde-->
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" name="email" value="@gmail.com">
+                    </div>
+
+                    <div>
+                        <label for="">Contraseña</label>
+                        <input type="password" name="contrasenia" required>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="boton">Ingresar</button>
+                    </div>
+                    <a href="register.html" class="ya_tengo"> No tengo cuenta</a>
+
+
+
+                </form>
 
 
 
 
-        </section>
 
 
+            </section>
+
+        </div>
 
     </main>
 
@@ -98,7 +120,7 @@
             <article class="pie_derecha">
                 <h1>Mankah</h1>
                 <a href="./index.html">
-                    <img src="./img/logo_blanco.png" alt="logo">
+                    <img src="./img/logo-blanco.png" alt="logo">
                 </a>
 
             </article>
