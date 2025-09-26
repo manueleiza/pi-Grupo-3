@@ -633,15 +633,12 @@ border-radius: 10px;
 
 .descripcion_producto article{
     width: 45% ;
-    height: 500px;
+
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-
     margin-left: 3%;
-
     padding: 2%;
 
 
@@ -707,8 +704,44 @@ border-radius: 10px;
     padding: 1%;
 }
 
+.comentarios{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.638);
+    border-radius: 20px;
+    width: 30px;
+    margin-bottom: 5px;
+}
 
+.comentarios h3{
+    font-size: large;
+}
 
+.comentarios h4{
+    font-size: small;
+}
+.puntuacion{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.puntuacion img{
+    display: flex;
+    width: 25px;
+  
+}
+
+.nobre_fecha{
+margin-bottom: 0px;
+}
+
+.fecha{
+    margin-bottom: 2%;
+}
 
 
 
@@ -932,5 +965,20 @@ border-radius: 10px;
 .fan{
     margin: 0px;
 }
+
+.main_log{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.formulario_login{
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
 
 }
