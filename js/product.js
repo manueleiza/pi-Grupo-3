@@ -3,6 +3,7 @@ let productoElegido = quearySearch.get("detalles");
 let descripcionProducto = document.querySelector(".descripcion_producto");
 let seccion_comentarios = document.querySelector(".seccion_comentarios");
 
+
 console.log(productoElegido)
 
 
@@ -22,10 +23,9 @@ fetch(urlProducto)
 
         for (let i = 0; i < listadoProductos.length; i++) {
 
-            let tags = listadoProductos[i].tags;
             let review = listadoProductos[i].reviews;
 
-
+            // producto
             if (listadoProductos[i].title == productoElegido) {
 
                 articulosProducto = `
@@ -36,24 +36,65 @@ fetch(urlProducto)
 
                     <article class="article_producto">
                         <h3>${listadoProductos[i].title}</h3>
-                        <div>
+                        <div class = "divProducto"  >
                             <p class="precio"><span class="precio_anterior">$${listadoProductos[i].price + 2}</span class="precio"> $${listadoProductos[i].price} </p>
                         </div>
 
-                        <div>
+                        <div class = "divProducto">
                             <p class="resumen_producto">${listadoProductos[i].description}</p>
                         </div>
 
-                        <div>
+                        <div >
                             <p class="stock"> Stock: ${listadoProductos[i].stock} unidades</p>
                         </div>
 
-                        <div>
-                            <p class="tags"><span class="nada">${listadoProductos[i].tags[0]}</span> - <span class="nada"> ${listadoProductos[i].tags[1]}</span></p>
+                        <div class ="divTags">
+                            <ul class="tags"> 
+
+                            <li class="tagIndividual"></li>
+                            <li class="tagIndividual"></li>
+                            <li class="tagIndividual"></li>
+
+
+                            </ul>                       
+                            
                         </div>
                     </article>
                     `
                 descripcionProducto.innerHTML = articulosProducto;
+
+                let productoTags = listadoProductos[i].tags;
+                console.log(productoTags)
+
+                let todosLosTags = document.querySelector(".tags");
+                let tagIndividual = document.querySelectorAll(".tagIndividual");
+
+                console.log(tagIndividual)
+
+            //tags 
+
+               if (productoTags.length == 1){
+
+                    todosLosTags.innerHTML = `<li class="tagIndividual">${productoTags[0]}</li>`
+
+               }
+                else if (productoTags.length == 2){
+
+                    todosLosTags.innerHTML = `<li class="tagIndividual">${productoTags[0]}</li>
+                                            <li class="tagIndividual">-${productoTags[1]}</li>`
+
+               }
+                else{
+
+                    todosLosTags.innerHTML = `<li class="tagIndividual">${productoTags[0]}</li>
+                                            <li class="tagIndividual">-${productoTags[1]}</li>
+                                            <li class="tagIndividual">-${productoTags[2]}</li>`
+
+
+               }
+
+
+
 
 
 
@@ -69,6 +110,10 @@ fetch(urlProducto)
                                 <h3 class="nobre_fecha">${nombre}</h3>
                                 <h3 class="fecha">${fecha}</h3>
                                 <h4 class="puntuacion">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-gris.png" alt="estrella">
+                                    <img src="./img/estrella-gris.png" alt="estrella">
+                                    <img src="./img/estrella-gris.png" alt="estrella">
                                     <img src="./img/estrella-gris.png" alt="estrella">1/5
                                 </h4>
                                 <p>${comentarioReview}</p>
@@ -81,6 +126,9 @@ fetch(urlProducto)
                                 <h3 class="nobre_fecha">${nombre}</h3>
                                 <h3 class="fecha">${fecha}</h3>
                                 <h4 class="puntuacion">
+                                <img src="./img/estrella-amarilla.png" alt="estrella">
+                                <img src="./img/estrella-amarilla.png" alt="estrella">
+                                <img src="./img/estrella-gris.png" alt="estrella">
                                     <img src="./img/estrella-gris.png" alt="estrella">
                                     <img src="./img/estrella-gris.png" alt="estrella">2/5
                                 </h4>
@@ -94,7 +142,9 @@ fetch(urlProducto)
                                 <h3 class="nobre_fecha">${nombre}</h3>
                                 <h3 class="fecha">${fecha}</h3>
                                 <h4 class="puntuacion">
-                                    <img src="./img/estrella-gris.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
                                     <img src="./img/estrella-gris.png" alt="estrella">
                                     <img src="./img/estrella-gris.png" alt="estrella">3/5
                                 </h4>
@@ -108,8 +158,10 @@ fetch(urlProducto)
                                 <h3 class="nobre_fecha">${nombre}</h3>
                                 <h3 class="fecha">${fecha}</h3>
                                 <h4 class="puntuacion">
-                                    <img src="./img/estrella-gris.png" alt="estrella">
-                                    <img src="./img/estrella-gris.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
                                     <img src="./img/estrella-gris.png" alt="estrella">4/5
                                 </h4>
                                 <p>${comentarioReview}</p>
@@ -122,10 +174,12 @@ fetch(urlProducto)
                                 <h3 class="nobre_fecha">${nombre}</h3>
                                 <h3 class="fecha">${fecha}</h3>
                                 <h4 class="puntuacion">
-                                    <img src="./img/estrella-gris.png" alt="estrella">
-                                    <img src="./img/estrella-gris.png" alt="estrella">
-                                    <img src="./img/estrella-gris.png" alt="estrella">
-                                    <img src="./img/estrella-gris.png" alt="estrella">5/5
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    <img src="./img/estrella-amarilla.png" alt="estrella">
+                                    5/5
                                 </h4>
                                 <p>${comentarioReview}</p>
                             </article>
@@ -154,6 +208,9 @@ fetch(urlProducto)
 
 
 
-    })
+    }) 
+    .catch(function (error) {
+        console.error('Error:', error);
+    });
 
 

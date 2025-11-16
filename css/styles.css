@@ -698,6 +698,8 @@ label {
     margin-bottom: 5%;
     margin-top: 7%;
 }
+.comentarios p{
+}
 
 .article_producto{
     width: 45%;
@@ -749,11 +751,21 @@ label {
 }
 
 .tags {
-    font-size: 12px;
-
+    font-size: 15px;
     color: rgb(99, 97, 97);
-
     text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content:flex-start;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+    
+}
+
+.divTags{
+    display: flex;
+    align-items: flex-start;
 }
 
 
@@ -761,14 +773,14 @@ label {
     color: rgb(3, 117, 37);
 }
 
-.nada {
+.tagIndividual {
     text-decoration: underline;
 
 }
 
-.article_producto div {
+.divProducto {
     width: 100%;
-    padding: 1%;
+    
 }
 
 
@@ -776,18 +788,14 @@ label {
 
 
 
-.comentarios h3 {
-    font-size: large;
-}
 
-.comentarios h4 {
-    font-size: small;
-}
+
+
 
 .puntuacion {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 10%;
     margin-bottom: 0px;
     flex-direction: row;
     align-items: center;
@@ -802,10 +810,13 @@ label {
 
 .nobre_fecha {
     margin-bottom: 0px;
+    font-size: 25px;
 }
 
 .fecha {
     margin-bottom: 2%;
+    font-size: 12px;
+    color: rgb(95, 95, 95);
 }
 
 
@@ -975,6 +986,7 @@ label {
     .descripcion_producto div {
         text-align: center;
         padding: 2%;
+     
     }
 
     .descripcion_producto h3 {
