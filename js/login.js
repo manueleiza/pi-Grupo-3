@@ -1,4 +1,3 @@
-// Buscar validar los datos el formu - y guardar datos en Local storage. 
 
 let formulario = document.querySelector ('#login_formulario');
 
