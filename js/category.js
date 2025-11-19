@@ -6,8 +6,8 @@ let product = document.querySelector(".categorias");
 let URL = `https://dummyjson.com/products/category/${category}`;
 
 fetch(URL)
-    .then(function (res) {
-        return res.json();
+    .then(function (respuesta) {
+        return respuesta.json();
     })
     .then(function (data) {
         console.log(data);
@@ -28,8 +28,8 @@ fetch(URL)
             `;
         }
     })
-    .catch(function (err) {
-        console.log(err);
+    .catch(function (error) {
+        console.log(error);
     });
 
 

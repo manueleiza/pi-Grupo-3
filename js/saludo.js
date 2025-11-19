@@ -20,7 +20,7 @@ if (emailAlmacenado){
         })
 
     }else{
-  alert("No se guardaron bien los datos");
+ // alert("No se guardaron bien los datos");
 
 
 

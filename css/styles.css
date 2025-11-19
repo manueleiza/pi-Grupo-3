@@ -647,11 +647,11 @@ color: black;
 width: 100%;
 flex-wrap: wrap;
 border: 2px solid rgb(241, 238, 209);
-
+justify-content: center;
 border-radius: 10px;
 }
 
-.descripcion_producto article{
+.article_producto{
     width: 45% ;
 
 
@@ -726,10 +726,15 @@ border-radius: 10px;
 
 .comentarios{
     display: flex;
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.638);
     border-radius: 20px;
-    width: 30px;
+    width: 30%;
+    height: fit-content;
+    padding: 2%;
+    margin-left: 1%;
     margin-bottom: 5px;
+    margin-top: 3%;
 }
 
 .comentarios h3{
@@ -918,7 +923,8 @@ margin-bottom: 0px;
     .descripcion_producto {
         display: flex;
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
     }
 
     .descripcion_producto article{
