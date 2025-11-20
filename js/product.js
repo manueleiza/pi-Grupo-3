@@ -25,6 +25,8 @@ fetch("https://dummyjson.com/products/categories")
         return arrayUrl
     })
 
+    
+
 
     .then(function (arrayUrl) {
 
