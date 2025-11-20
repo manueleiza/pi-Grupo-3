@@ -817,6 +817,13 @@ margin-bottom: 0px;
     .mas_vendidos {
         display: flex;
         flex-direction: column;
+        
+    }
+
+    .contenedor-busqueda{
+        display: flex;  
+        flex-direction: column;
+
     }
 
     .resgistro {
