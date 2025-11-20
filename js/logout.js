@@ -7,7 +7,7 @@ if (logout){
 
 
         localStorage.removeItem('elEmailDelUsuario');
-        /// ALGUNO SABE COMO RECARCAR LA PAGINA PARA QUE SE ACUALICE?
+        
 
     })
 }

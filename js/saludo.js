@@ -18,10 +18,11 @@ if ( elEmailDelUsuario){
         })
 
     }else{
-  alert("No se guardaron bien los datos");
-
-
-
+      saludo.innerText = '';
+      lista.innerHTML = ` 
+      <li><a href="./login.html"> Login </a></li>
+      <li>|</li>
+      <li><a href="./register.html">Registro</a></li>`;
 }
 
 

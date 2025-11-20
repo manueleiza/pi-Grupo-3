@@ -1,4 +1,3 @@
-
 let formulario = document.querySelector('#login_form');
 
 formulario.addEventListener("submit", function (e) {
