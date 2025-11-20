@@ -3,7 +3,6 @@ let formulario = document.querySelector('#login_form');
 
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
-    alert('Estamos viendo si funciona');
 
     let email = document.querySelector('#email');
     let contrasenia = document.querySelector('#contrasenia');
@@ -15,9 +14,7 @@ formulario.addEventListener("submit", function (e) {
     } else if (contrasenia.value.length < 6) {
         alert('La contraseña debe tener al menos 6 caracteres');
     } else {
-        localStorage.setItem('emailUser', email.value)
-        let emailGuardado = localStorage.getItem('emailUser');
-        console.log('Email:', emailGuardado);
+        localStorage.setItem('elEmailDelUsuario', email.value)
 
         this.submit()
     }

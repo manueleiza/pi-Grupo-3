@@ -1,30 +1,30 @@
-let emailAlmacenado = localStorage.getItem('emailUser');
+let  elEmailDelUsuario = localStorage.getItem('elEmailDelUsuario');
 
 let lista = document.querySelector('.listaHeader');
 let saludo = document.querySelector('.saludo');
 
 
 
-if (emailAlmacenado){
+if ( elEmailDelUsuario){
 
-    saludo.innerText = `Bienvenido: ${emailAlmacenado}`;
+    saludo.innerText = `Bienvenido: ${elEmailDelUsuario}`;
     
     lista.innerHTML =
-     ` <li><a href="#">${emailAlmacenado}</a></li>
-        <li>|</li>
-        <li><a href="./login.html" id="logout">Logout</a></li>`;
+     ` <li><a href="./login.html" id="logout">Logout</a></li>`;
 
         let logout = document.querySelector('#logout');
         logout.addEventListener('click', function(){
-            localStorage.removeItem('emailUser');
+            localStorage.removeItem('elEmailDelUsuario');
         })
 
     }else{
-  alert("No se guardaron bien los datos");
-
-
-
+      saludo.innerText = '';
+      lista.innerHTML = ` 
+      <li><a href="./login.html"> Login </a></li>
+      <li>|</li>
+      <li><a href="./register.html">Registro</a></li>`;
 }
+
 
 
 
