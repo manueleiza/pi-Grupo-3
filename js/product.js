@@ -46,7 +46,7 @@ fetch("https://dummyjson.com/products/categories")
 
                         let review = listadoProductos[i].reviews;
 
-                        // producto
+                        
                         if (listadoProductos[i].title == productoElegido) {
 
                             articulosProducto = `
@@ -92,7 +92,7 @@ fetch("https://dummyjson.com/products/categories")
 
                             console.log(tagIndividual)
 
-                            //tags 
+                            
 
                             if (productoTags.length == 1) {
 

@@ -2,34 +2,49 @@ let resgistro = document.querySelector(".resgistro form");
 let gmail = document.querySelector(".gmail");
 let contra1 = document.querySelector(".contra1");
 let contra2 = document.querySelector(".contra2");
-let terminos = document.querySelector(".terminos");
-let menIncompleto = "Este campo esta vacio"
-let menlarge = "La contraseña debe tener al menos 6 caracteres"
-let menIguales = "Las contraseñas no coinciden" 
+let aceptarTem = document.querySelector(".terminos");
+let acepto = false;
 
-resgistro.addEventListener("submit", function(event){
+let Acept = "Se deben aceptar los terminos y condiciones.";
+let Incompleto = "Este campo esta vacio";
+let large = "La contraseña debe tener al menos 6 caracteres";
+let Iguales = "Las contraseñas no coinciden";
+
+aceptarTem.addEventListener("click", function () {
+    if (acepto === false) {
+        acepto = true;
+    } else {
+        acepto = false;
+    }
+});
+
+resgistro.addEventListener("submit", function (event) {
     event.preventDefault();
-    if (gmail.value == ""){
-        alert(menIncompleto);
+
+    if (gmail.value == "") {
+        alert(Incompleto);
         return;
     }
-    if (contra1.value == ""){
-        alert(menIncompleto);
+    else if (contra1.value == "") {
+        alert(Incompleto);
         return;
     }
-    if (contra1.value.length < 6){
-        alert(menlarge);
+    else if (contra1.value.length < 6) {
+        alert(large);
         return;
     }
-    if (contra1.value != contra2.value){
-        alert(menIguales);
+    else if (contra1.value != contra2.value) {
+        alert(Iguales);
         return;
     }
-    else{
+    else if (acepto == false) {
+        alert(Acept);
+        return;
+    }
+    else {
         this.submit();
     }
-
-})
+});
 
 
 fetch("https://dummyjson.com/products/categories")
@@ -56,3 +71,6 @@ fetch("https://dummyjson.com/products/categories")
   }) .catch(function (error) {
         console.error('Error:', error);
     });
+
+
+
