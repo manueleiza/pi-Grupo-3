@@ -32,3 +32,27 @@ resgistro.addEventListener("submit", function(event){
 })
 
 
+fetch("https://dummyjson.com/products/categories")
+  .then(function(respuesta){
+     return respuesta.json(); 
+    }
+)
+  .then(function(categorias){
+
+     let lista = document.querySelector(".lista_nav");
+
+
+     for(let i = 0; i < categorias.length; i++){
+        lista.innerHTML += `
+           <li>
+             <a href="./category.html?category=${categorias[i].slug}">
+               ${categorias[i].name}
+             </a>
+           </li>
+        `;
+
+     }
+
+  }) .catch(function (error) {
+        console.error('Error:', error);
+    });

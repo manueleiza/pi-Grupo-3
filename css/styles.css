@@ -164,7 +164,7 @@ body {
     flex-wrap: wrap;
     width: 28.1vw;
     background-color: #e4d2ba;
-    height: 57.5vh;
+    height: 50%;
     justify-content: center;
 
     padding: 30px;
@@ -540,7 +540,7 @@ color: black;
     width: 28.1vw;
     background-color: #e4d2ba;
 
-    height: 35.5vh;
+    height: 30%;
     padding: 30px;
     padding-top: 10px;
     border-radius: 20px;
