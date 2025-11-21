@@ -173,6 +173,7 @@ body {
     margin-top: 1.9%;
     margin-bottom: 8.1%;
     margin-left: 12vw;
+    flex-direction: column;
 }
 
 div {
@@ -257,7 +258,11 @@ label {
 
 }
 
-
+.alert{
+    display: flex;
+    display: none;
+    margin-left: 4.5vh;
+}
 
 
 /*HOME*/

@@ -1,4 +1,10 @@
 let formulario = document.querySelector('#login_form');
+let error = document.querySelector(".alert")
+
+let errorEmail = "El campo del email es obligatorio";
+let errorContra = "El campo de la contraseña es obligatorio";
+let large = "La contraseña debe tener al menos 6 caracteres";
+
 
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -6,12 +12,15 @@ formulario.addEventListener("submit", function (e) {
     let email = document.querySelector('#email');
     let contrasenia = document.querySelector('#contrasenia');
 
+
+    error.style.display = "block";
+
     if (email.value == "") {
-        alert('El campo del email es obligatorio')
+        error.innerText = errorEmail
     } else if (contrasenia.value == "") {
-        alert('El campo de la contraseña es obligatorio')
+        error.innerText = errorContra
     } else if (contrasenia.value.length < 6) {
-        alert('La contraseña debe tener al menos 6 caracteres');
+        error.innerText = large
     } else {
         localStorage.setItem('elEmailDelUsuario', email.value)
 

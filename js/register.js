@@ -4,9 +4,13 @@ let contraUno = document.querySelector(".contra1");
 let contraDos = document.querySelector(".contra2");
 let aceptarTem = document.querySelector(".terminos");
 let acepto = false;
+let error = document.querySelector(".alert")
+
+
 
 let acept = "Se deben aceptar los terminos y condiciones.";
-let incompleto = "Este campo esta vacio";
+let incompletoEmail = "El campo Email esta vacio";
+let incompletoContra = "El campo Contraseña esta vacio";
 let large = "La contraseña debe tener al menos 6 caracteres";
 let iguales = "Las contraseñas no coinciden";
 
@@ -21,24 +25,27 @@ aceptarTem.addEventListener("click", function () {
 resgistro.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    error.style.display = "block";
+
     if (gmail.value == "") {
-        alert(incompleto);
+        error.innerText = incompletoEmail
         return;
     }
     else if (contraUno.value == "") {
-        alert(incompleto);
+        error.innerText = incompletoContra
         return;
     }
     else if (contraUno.value.length < 6) {
-        alert(large);
+        error.innerText = large
+;
         return;
     }
     else if (contraUno.value != contraDos.value) {
-        alert(iguales);
+        error.innerText = iguales
         return;
     }
     else if (acepto == false) {
-        alert(acept);
+        error.innerText = acept;
         return;
     }
     else {
