@@ -8,59 +8,42 @@ fetch(`https://dummyjson.com/products/search?q=${producto_buscado}`)
         return respuesta.json()
     })
     .then(function (listaProductos) {
-        
-        let productos = listaProductos.products;
-        mas_vendidos.innerHTML = ``
-                
-        let nuevo_subtitulo = `${producto_buscado}`;
-        subtitulo.innerText += " " + `${nuevo_subtitulo}`;
+        if(producto_buscado.length >=3){
+            let productos = listaProductos.products;
+            mas_vendidos.innerHTML = ``
+
+            let nuevo_subtitulo = `${producto_buscado}`;
+            subtitulo.innerText += " " + `${nuevo_subtitulo}`;
 
 
-        if (productos.length > 0) {
+            if (productos.length > 0) {
 
 
-            for (let i = 0; i < productos.length; i++) {
 
-                let producto = `
-                    <article class="articulo_producto">
-                        <img src="${productos[i].images[0]}"></img>
-                        <h3>${productos[i].title}</h3>
-                        <p>${productos[i].description}</p>
-                        <p>$${productos[i].price}</p>
-                        <a href="./product.html?detalles=${productos[i].title}">Ver Detalles</a>
-                    </article>`;
+                for (let i = 0; i < productos.length; i++) {
+
+                    let producto = `
+                        <article class="articulo_producto">
+                            <img src="${productos[i].images[0]}"></img>
+                            <h3>${productos[i].title}</h3>
+                            <p>${productos[i].description}</p>
+                            <p>$${productos[i].price}</p>
+                            <a href="./product.html?detalles=${productos[i].title}">Ver Detalles</a>
+                        </article>`;
 
 
-                mas_vendidos.innerHTML += producto;
-            }
+                    mas_vendidos.innerHTML += producto;
+                }
 
         } else {
             subtitulo.style.display = 'none'
             mas_vendidos.innerHTML = `<h1>No hay resultados para el término: ${producto_buscado}</h1>`
         }
+        }
+        else{
+            mas_vendidos.style.display ="none";
+            alert("minimo 3 caracteres")
+        }
+        
     });
 
-    fetch("https://dummyjson.com/products/categories")
-  .then(function(respuesta){
-     return respuesta.json(); 
-    }
-)
-  .then(function(categorias){
-
-     let lista = document.querySelector(".lista_nav");
-
-
-     for(let i = 0; i < categorias.length; i++){
-        lista.innerHTML += `
-           <li>
-             <a href="./category.html?category=${categorias[i].slug}">
-               ${categorias[i].name}
-             </a>
-           </li>
-        `;
-
-     }
-
-  }) .catch(function (error) {
-        console.error('Error:', error);
-    });

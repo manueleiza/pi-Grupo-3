@@ -25,7 +25,7 @@ fetch("https://dummyjson.com/products/categories")
         return arrayUrl
     })
 
-    
+
 
 
     .then(function (arrayUrl) {
@@ -46,7 +46,7 @@ fetch("https://dummyjson.com/products/categories")
 
                         let review = listadoProductos[i].reviews;
 
-                        
+
                         if (listadoProductos[i].title == productoElegido) {
 
                             articulosProducto = `
@@ -77,7 +77,8 @@ fetch("https://dummyjson.com/products/categories")
                                                     <li class="tagIndividual"></li>
 
 
-                                                    </ul>                       
+                                                    </ul>  
+                                                    
                                                     
                                                 </div>
                                             </article>
@@ -92,22 +93,22 @@ fetch("https://dummyjson.com/products/categories")
 
                             console.log(tagIndividual)
 
-                            
+
 
                             if (productoTags.length == 1) {
 
-                                todosLosTags.innerHTML = `<li class="tagIndividual">${productoTags[0]}</li>`
+                                todosLosTags.innerHTML = `<li class="tagIndividual">  <a href="./category.html?category=${listadoProductos[i].category}">${productoTags[0]}</li>`
 
                             }
                             else if (productoTags.length == 2) {
 
-                                todosLosTags.innerHTML = `<li class="tagIndividual">${productoTags[0]}</li>
+                                todosLosTags.innerHTML = `<li class="tagIndividual">    <a href="./category.html?category=${listadoProductos[i].category}">${productoTags[0]}</li>
                                                                     <li class="tagIndividual">-${productoTags[1]}</li>`
 
                             }
                             else {
 
-                                todosLosTags.innerHTML = `<li class="tagIndividual">${productoTags[0]}</li>
+                                todosLosTags.innerHTML = `<li class="tagIndividual">   <a href="./category.html?category=${listadoProductos[i].category}">${productoTags[0]}</li>
                                                                     <li class="tagIndividual">-${productoTags[1]}</li>
                                                                     <li class="tagIndividual">-${productoTags[2]}</li>`
 
@@ -239,27 +240,3 @@ fetch("https://dummyjson.com/products/categories")
         }
     })
 
-fetch("https://dummyjson.com/products/categories")
-  .then(function(respuesta){
-     return respuesta.json(); 
-    }
-)
-  .then(function(categorias){
-
-     let lista = document.querySelector(".lista_nav");
-
-
-     for(let i = 0; i < categorias.length; i++){
-        lista.innerHTML += `
-           <li>
-             <a href="./category.html?category=${categorias[i].slug}">
-               ${categorias[i].name}
-             </a>
-           </li>
-        `;
-
-     }
-
-  }) .catch(function (error) {
-        console.error('Error:', error);
-    });
